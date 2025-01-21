@@ -48,3 +48,72 @@ console.log("2" === 2); // False
 
 
 // Baqi saaray comparision operators wese hi work krte hain jese C++ mai krte hain.
+
+// *************** DATA Types Summary ******************
+
+/* 
+=> Primitive Data Types
+1. number
+2. string
+3. boolean
+4. bigInt
+5. null
+6. undefined
+7. symbol
+
+=> Non Primitive Data Types
+
+1. Array
+2. Objects
+3. Functions
+
+=> JavaScript a Dynamic Language or a Static Language
+
+A dynamic language is the language in which we do not have to define data type explicitly. While in static , we have to. Hence JS is a dynamic language.
+
+=> How does Symbol work?
+
+Symbol gives a unique data type to each of the value.
+
+For Eg : 
+const Id1 = Symbol('2')
+const Id2 = Symbol('2')
+
+Dikhne mai tou Ids same hain , unique nahi hain. But because these are the symbols, they are different because they both are some unique data types...
+
+Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+
+
+
+=> Now Stack Memory vs Heap Memory
+
+-> All primitive Data types are saved as stack memory . Means whenever they are used or edited, a copy of them is made.
+-> All Non - primitive data types are saved as heap memory. Means whenever they are used or edited, a reference of them is provided. 
+
+Eg of heap mem:
+    let userOne = {
+        email : "myEmail@gmail.com",
+        age: 20
+    }
+
+    let userTwo = userOne;
+
+    userTwo.email = "IbadEmail@gmail.com";
+
+    Now,
+    console.log(userOne.email) // Gives IbadEmail@gmail.com
+    console.log(userTwo.email) // Gives IbadEmail@gmail.com
+*/
